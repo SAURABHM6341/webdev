@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .conta {
+            border: 2px solid green;
+            display: flex;
+            height: 60vh;
+            justify-content: center;
+            /* ye flex ki main axis ke according centre krega vertcal and horizontally */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* upar aa jayega */
+            /* by default flex direction left to right hoti h but ise ham badal sakte h */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse;  direction reverse ho jayegi aur row reverse bhi ho skti h*/
+            /* align-items: baseline; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* isse lgane se niche bhi content aa jata h  */
+            /* aur reverse se last ka first me aa jata h  */
+            /* align-content: flex-start; */
+            /* align item bhi use krte bot only for 1 line  */
+            /* isse flex start me aa jata h  */
+            /* align-content: center; */
+            /* isse paas me aur centre me  aa jate h */
+            /* flex-flow:<flex-direction> <flex-wrap>; */
+            flex-flow: row wrap;
+            /* gap: 30px; */
+            /* gap se elements ke beech me gap badh gya */
+            /* row-gap: 10px; */
+            /* column-gap: 40px; */
+            gap: 10px 40px;
+            /* pehla wala row then column */
+
+        }
+
+        /* container aur item ki property alag hoti h so please gud gobar mat krna */
+
+        .item {
+            height: 52px;
+            width: 52px;
+            background-color: red;
+            border: 2px solid black;
+            /* flex-grow:2; */
+            /* by flex grow means ye kitne item ki jagah lega  */
+            /* by default flex grow is zero */
+            margin: 3px;
+        }
+
+        .item1 {
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /* isko lgane se agr layout chota ho rha (iske liye wrap band krna pdega) to sabse phle ye shring hoga kyoki hamne isko ability di h is cheez ko aur 2 ka matlab ki jis speed se other shrink ho rhe hnge uske 2x speed se ye shrink hoga */
+            align-self: flex-start;
+            /* isko use krne se ek element ko ham allign kr skte h
+            iske liye align content ki property htani pdegi */
+        }
+
+        /* .item2{}
+        .item3{}
+        .item4{}
+        .item5{}
+        .item6{} */
+        /* order wali baat ko pdne ke liye refer to codewithharry.com */
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="conta">
+            <div class="item1 item"></div>
+            <div class="item2 item"></div>
+            <div class="item3 item"></div>
+            <div class="item4 item"></div>
+            <div class="item5 item"></div>
+            <div class="item6 item"></div>
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>mySpotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./spotifavicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="bigcontainer">
+        <div class="container">
+            <div class="chotacontainer">
+                <div class="leftbar">
+                    <div class="upper">
+                        <div class="logo upperpart">
+                            <img width="78px" height="24px" src="./logo.svg" alt="">
+                        </div>
+                        <div class="home upper1 upperpart">
+                            <div class="homelogo elementlogo">
+                                <img src="./homelogo.svg" alt="" height="24px" width="24px">
+                                <div class="upper1text" style="font-weight: 700;">Home</div>
+                            </div>
+                        </div>
+                        <div class="search upper1 upperpart">
+                            <div class="searchlogo elementlogo">
+                                <img style="color: #B3B3B3;" src="./searchlogo.svg" width="24px" height="24px" alt="">
+                                <div class="upper1text uppersearch">Search</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <div class="head">
+                            <div class="yourlibrary">
+                                <button>
+                                    <div>
+                                        <img src="./libreary.svg" width="24px" height="24px" alt="">
+                                    </div>
+                                    <div>Your Library</div>
+                                </button>
+                            </div>
+                            <div class="createlibrary">
+                                <button> <img src="./plus.svg" height="14.5px" width="14.5px" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="mid">
+                            <div class="playlist dabba">
+                                <div class="bigtext">Create your first playlist</div>
+                                <div class="smalltext">It's easy, we'll help you</div>
+                                <div class="midbtn"><button class="playlistbutton">Create playlist</button></div>
+                            </div>
+                            <div class="podcast dabba">
+                                <div class="bigtext">Let's find some podcasts to follow</div>
+                                <div class="smalltext">We'll keep you updated on new episodes</div>
+                                <div class="midbtn"><button class="podcastbutton">Browse podcasts</button></div>
+                            </div>
+                        </div>
+                        <div class="footelements">
+                            <div class="footelement1 footelement" ><a href = "https://www.spotify.com/in-en/legal/">Legal</a></div>
+                            <div class="footelement2 footelement"><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+                            <div class="footelement3 footelement"><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                            <div class="footelement4 footelement"><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                            <div class="footelement5 footelement"><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                            <div class="footelement6 footelement"><a href="https://www.spotify.com/in-en/accessibility/">Acessibility</a></div>
+                        </div>
+                        <div class="lanbutt">
+                            <button class="lang">
+                                <div class="univerlogo" style="padding-top: 4px;"><img width="16px" height="16px"
+                                        src="./universelogo.svg" alt=""></div>
+                                <div><text>English</text></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightbar">
+                    <div class="credential">
+                        <div class="arrows">
+                            <button class="arrow"><img height="16px" width="16px" src="./leftarrow.svg" alt=""></button>
+                            <button class="arrow"><img height="16px" width="16px" src="./rightarrow.svg"
+                                    alt=""></button>
+                        </div>
+                        <div class="userlog">
+                            <div class="signup">
+                                <button class="signupbtn">Sign up</button>
+                            </div>
+                            <div class="login">
+                                <button class="loginbtn">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artists">
+                        <div class="titlehead">
+                            <div class="textoftitlehead"><a href="">Popular artists</a></div>
+                            <div class="showall">
+                                <a href="">Show all</a>
+                            </div>
+                        </div>
+                        <div class="multiphototitle">
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt=""
+                                        srcset=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Pritam</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Arijit Singh</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">A.R. Rahman</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext anirudh" >Anirudh Ravichander</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174a038d7d87f8577bbb9686bd3" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Sachin Jigar</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Vishal Mishra</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Atif Aslam</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Vishal-Shekhar</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle artistphoto"><img width="152px" height="152px"
+                                        src="https://i.scdn.co/image/ab67616100005174eddbb664c4723f268a60d8c1" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Badshah</div>
+                                    <div class="smallfontphototext">Artist</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albums">
+                        <div class="titlehead">
+                            <div class="textoftitlehead">Popular albums</div>
+                            <div class="showall">
+                                <a href="">Show all</a>
+                            </div>
+                        </div>
+                        <div class="multiphototitle">
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Ek Tha Raja</div>
+                                    <div class="smallfontphototext"><a href="">Badshah</a></div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">ANIMAL</div>
+                                    <div class="smallfontphototext"><a href="">Manan Bharadwaj</a>, <a href="">Vishal
+                                            Mishra</a>, <a href="">Jaani</a></div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">love hotel</div>
+                                    <div class="smallfontphototext"><a href="">leftovermax</a></div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Aashiqui 2</div>
+                                    <div class="smallfontphototext"><a href="">Mithoon</a>, <a href="">Ankit Tiwari</a>,
+                                        <a href="">Jeet Ganguli</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Moosetape</div>
+                                    <div class="smallfontphototext"><a href="">Sidhu Moose Wala</a></div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext sajni">Sajni(From "Laapataa Ladies")</div>
+                                    <div class="smallfontphototext"><a href="">Ram Sampath</a>, <a href="">Arijit
+                                            Singh</a>,
+                                        <a href="">Prashant Pandey</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Still Rollin</div>
+                                    <div class="smallfontphototext"><a href="">Shubh</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e021d93bb16bf3025587d001f45" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Aavesham (Original Motion Picture Soundtrack)</div>
+                                    <div class="smallfontphototext"><a href="">Sushin Shyam</a>, <a href="">Vinayak Sasikumar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px"
+                                        src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="">
+                                </div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext">Making Memories</div>
+                                    <div class="smallfontphototext"><a href="">Karan Aujla</a>, <a href="">Ikky</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popularradio">
+                            <div class="titlehead">
+                                <div class="textoftitlehead">Popular radio</div>
+                                <div class="showall">
+                                    <a href="">Show all</a>
+                                </div>
+                            </div>
+                            <div class="multiphototitle">
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/07iEy1AecUPVzfC2J2gCHR/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">IKKA Radio</div>
+                                        <div class="smallfontphototext">With Karma, Raga, muhfaad and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Arijit Singh Radio</div>
+                                        <div class="smallfontphototext">With Neha Kakkar, Pritam, KK and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A.R. Rahman Radio</div>
+                                        <div class="smallfontphototext">With Shankar Mahadevan, Anirudh Ravichander,
+                                            Yuvan
+                                            Shankar Raja and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Diljit Dosanjh Radio</div>
+                                        <div class="smallfontphototext">With Garry Sandhu, Ranjit Bawa, Amrinder Gill
+                                            and
+                                            more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2ae6PxICSOZHvjqiCcgon8/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext subra">S. P. Subrahmanyam Radio</div>
+                                        <div class="smallfontphototext">With Mano, Ilaiyaraaja, S. Janaki and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0GF4shudTAFv8ak9eWdd4Y/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext kishor">Kishore Kumar Radio</div>
+                                        <div class="smallfontphototext">With Mohammed Rafi, Asha Bhosle, R. D. Burman
+                                            and
+                                            more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/3gBKY0y3dFFVRqicLnVZYz/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Alka Yagnik Radio</div>
+                                        <div class="smallfontphototext">With Udit Narayan, Kumar Sanu, Anuradha Paudwal
+                                            and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4K6blSRoklNdpw4mzLxwfn/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Kumar Sanu Radio</div>
+                                        <div class="smallfontphototext">With Udit Narayan, Alka Yagnik, Anuradha Paudwal
+                                            and more</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px"
+                                            src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2oSONSC9zQ4UonDKnLqksx/en-GB"
+                                            alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Atif Aslam Radio</div>
+                                        <div class="smallfontphototext">With Ali Zafar, Rahat Fateh Ali Khan, Asim Azhar
+                                            and more</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charts">
+                            <div class="titlehead">
+                                <div class="textoftitlehead">Featured Charts</div>
+                                <div class="showall">
+                                    <a href="">Show all</a>
+                                </div>
+                            </div>
+                            <div class="multiphototitle">
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Top Songs - Global</div>
+                                        <div class="smallfontphototext">Your weekly update of the most played tracks
+                                            right
+                                            now - Global.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Top Songs - USA</div>
+                                        <div class="smallfontphototext">Your weekly update of the most played tracks
+                                            right
+                                            now - USA.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Top 50 - Global</div>
+                                        <div class="smallfontphototext">Your daily update of the most played tracks
+                                            right
+                                            now - Global.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Top 50 - USA</div>
+                                        <div class="smallfontphototext">Your daily update of the most played tracks
+                                            right
+                                            now - USA.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Viral 50 - Global</div>
+                                        <div class="smallfontphototext">Your daily update of the most viral tracks right
+                                            now
+                                            - Global.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Viral 50 - USA</div>
+                                        <div class="smallfontphototext">Your daily update of the most viral tracks right
+                                            now
+                                            - USA.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spotiplay">
+                            <div class="titlehead">
+                                <div class="textoftitlehead">Spotify Playlists</div>
+                                <div class="showall">
+                                    <a href="">Show all</a>
+                                </div>
+                            </div>
+                            <div class="multiphototitle">
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">New Music Friday</div>
+                                        <div class="smallfontphototext">The very best in new music from around the
+                                            world.
+                                            Cover:
+                                            LISA</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f000000029527413150cbd6d9b2a3785a" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Feel Good Friday</div>
+                                        <div class="smallfontphototext">Uplifting anthems to power you through 'til the
+                                            weekend.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f00000002c794d80845e16788522e7dc5" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">New Joints</div>
+                                        <div class="smallfontphototext">All the New Joints featuring Latto, Roddy Ricch,
+                                            Lil
+                                            Durk and more!</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f00000002640aa944e9d545e4dff348c1" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">Happy Beats</div>
+                                        <div class="smallfontphototext">Feel Good <a href="">dance music</a>!</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f00000002ff8feeced9096d196adba640" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">All New Dance</div>
+                                        <div class="smallfontphototext">This week's handpicked new <a href="">dance and
+                                                electronic music</a>, featuring new music from Channel Tres</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f000000025db1394baf8862336f19ac83" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A Perfect Day</div>
+                                        <div class="smallfontphototext">Timeless melodies from your favourite artists,
+                                            both
+                                            old
+                                            and new.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f0000000272eb337ebf006340f90bc5be" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A Perfect Day</div>
+                                        <div class="smallfontphototext">Timeless melodies from your favourite artists,
+                                            both
+                                            old
+                                            and new.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f00000002204335eb7d241ef0dbf5c5ad" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A Perfect Day</div>
+                                        <div class="smallfontphototext">Timeless melodies from your favourite artists,
+                                            both
+                                            old
+                                            and new.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f000000024a83d42ca84e63abc9413b5d" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A Perfect Day</div>
+                                        <div class="smallfontphototext">Timeless melodies from your favourite artists,
+                                            both
+                                            old
+                                            and new.</div>
+                                    </div>
+                                </div>
+                                <div class="photowithtext">
+                                    <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67706f0000000283da657fca565320e9311863" alt=""></div>
+                                    <div class="phototext">
+                                        <div class="bigfontphototext">A Perfect Day</div>
+                                        <div class="smallfontphototext">Timeless melodies from your favourite artists,
+                                            both
+                                            old
+                                            and new.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trendingepisode">
+                        <div class="titlehead">
+                            <div class="textoftitlehead">Trending Episodes</div>
+                            <div class="showall">
+                                <a href="">Show all</a>
+                            </div>
+                        </div>
+                        <div class="multiphototitle">
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f9f5d8dab58a909ef23fee583" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Welcome Back, RJ Balaji - Naallanaa</div>
+                                    <div class="smallfontphototext"><span>June 2021 <span class="dot">.
+                                            </span>15 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">#73: Hotel Of Horrors(Serial Killer - H. H. Holmes)
+                                    </div>
+                                    <div class="smallfontphototext"><span>June 2021 <span class="dot">.
+                                            </span>93 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f9d2abc777125c182cf99b60f" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Anubis:God Of Death Part - 2</div>
+                                    <div class="smallfontphototext"><span>June 2021 <span class="dot">.
+                                            </span>16 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f977f6de2920c47bb781ed6e5" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Anubis:God Of Death Part - 1</div>
+                                    <div class="smallfontphototext"><span>June 2021 <span class="dot">.
+                                            </span>13 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Mahabharata Episode 1:Beginnings</div>
+                                    <div class="smallfontphototext"><span>Apr 2014 <span class="dot">.
+                                            </span>24 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Relaxing Rain Sounds For Deep Sleep|2 Hours</div>
+                                    <div class="smallfontphototext"><span> Aug 2019 <span class="dot">.</span>
+                                            122 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/ab67656300005f1f6807eaee16197dac1dd840e8" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Ep 8 - Ye Na Thi Hamari Qismat</div>
+                                    <div class="smallfontphototext"><span> Aug 2020 <span class="dot">.</span>
+                                        3 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photowithtext">
+                                <div class="photooftitle"><img width="151px" height="151px" src="https://i.scdn.co/image/5752f200206ea03cb88b18201e8ce15febb2598b" alt=""></div>
+                                <div class="phototext">
+                                    <div class="bigfontphototext epi">Asatha Povathu Yaru | Madurai Muthu Special | Ep 96</div>
+                                    <div class="smallfontphototext"><span>May 2021 <span class="dot">.</span>
+                                        11 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tagfoot">
+                        <div class="toplinks">
+                            <div class="textfootlinks">
+                                <div class="toptitlehead">Company</div>
+                                <div class="topsubtext"><a>About</a></div>
+                                <div class="topsubtext"><a>Jobs</a></div>
+                                <div class="topsubtext"><a>For the Record</a></div>
+                            </div>
+                            <div class="textfootlinks">
+                                <div class="toptitlehead">Communities</div>
+                                <div class="topsubtext"><a>For Artists</a></div>
+                                <div class="topsubtext"><a>Developers</a></div>
+                                <div class="topsubtext"><a>Advertising</a></div>
+                                <div class="topsubtext"><a>Investors</a></div>
+                                <div class="topsubtext"><a>Vendors</a></div>
+                            </div>
+                            <div class="textfootlinks">
+                                <div class="toptitlehead">Useful links</div>
+                                <div class="topsubtext"><a>Support</a></div>
+                                <div class="topsubtext"><a>Free Mobile App</a></div>
+                            </div>
+                            <div class="textfootlinks">
+                                <div class="toptitlehead">Spotify Plans</div>
+                                <div class="topsubtext"><a>Premium Individual</a></div>
+                                <div class="topsubtext"><a>Premium Duo</a></div>
+                                <div class="topsubtext"><a>Premium Family</a></div>
+                                <div class="topsubtext"><a>Premium Student</a></div>
+                                <div class="topsubtext"><a>Spotify Free</a></div>
+                            </div>
+                        </div>
+                        <div class="sociallinks">
+                            <div class="insta btuun">
+                                <button class="socialbtn"><img width="16px" height="16px" src="./insta.svg"
+                                        alt=""></button>
+                            </div>
+                            <div class="twitter btuun">
+                                <button class="socialbtn"><img src="./twitter.svg" width="16px" height="16px"
+                                        alt=""></button>
+                            </div>
+                            <div class="facebook btuun">
+                                <button class="socialbtn"><img src="./facebbok.svg" width="16px" height="16px"
+                                        alt=""></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightsreser">
+                        <div class="textbootmost">
+                            © 2024 Spotify AB
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stickfooter">
+                <div class="stickfootetext">
+                    <div class="stickfoottexttitle">Preview of Spotify</div>
+                    <div class="stickfootsubtext">Sign up to get unlimited songs and podcasts with occasional ads. No
+                        credit card needed.</div>
+                </div>
+                <div class="signupfree"><button class="signupfreebtn">Sign up free</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

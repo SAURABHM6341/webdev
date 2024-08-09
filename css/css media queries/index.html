@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-queries</title>
+    <style>
+        body {
+            background-color: yellow;
+            color: blue;
+        }
+
+        .box {
+            border: 3px solid green;
+            padding: 11px;
+            margin-top: 34px;
+        }
+
+        @media only screen and (max-width : 455px) {
+
+            /* min width bhi likh skte h  */
+            /* @media not/only mediatype and (expression{  
+                css code
+            }) */
+            /* ek se jyada media quesries ka use ho skta h kuch devices ke loye alag kuch ke liye alag */
+            body {
+                background-color: green;
+                color: yellow;
+            }
+
+            .box {
+                border: 7px solid red;
+                padding: 11px;
+                margin-top: 34px;
+            }
+        }
+        @media screen and (orientation: landscape){
+            body{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    hey i am red, who are you?
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad laboriosam, labore deserunt placeat odit,
+        incidunt consequatur ipsa perferendis quam sapiente fugiat laborum vitae consectetur in quae maiores nihil?
+        Ipsum distinctio ab aliquid voluptatum!
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores alias ipsum molestiae mollitia unde
+        quaerat, similique dolorem ab deserunt assumenda, hic voluptate doloribus, quis cumque! Fuga perferendis nostrum
+        illo ipsum id tenetur, reiciendis omnis veritatis at voluptas aperiam ex porro animi. Tenetur, amet maxime?
+    </div>
+</body>
+
+</html>

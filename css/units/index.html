@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units and sizing</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* border: 0.2vw solid black; */
+            /*0.2 vw matlab 0.2 percent of view port width*/
+            /* width: 108px; */
+            width: 20vw;
+            height: 10vh;
+            /* vh means viewport height and 20 means 20% of height */
+            background-color: darkgreen;
+            box-sizing: border-box;
+            /*for doing it in center type the following but unit should not be in vw otherwise it will not go to center
+            and only in block element not in inline element*/
+            margin: 0px auto;
+            /*auto means agal bagal se auto upar niche se margin di jaa rhi h*/
+        }
+
+        .conta {
+            border: 2px solid black;
+
+            width: 500px;
+            background-color: darkgreen;
+            box-sizing: border-box;
+            margin: 23px auto;
+            font-size: 12px;
+            min-height: 39vw;
+        }
+        .conta p{
+            /* font-size: 1.5em; */
+            /* x em means jo isko font size milne wali thi uska x guna mil jayega */
+            font-size: 2rem;
+            /* ab agr hme chahiye ko kisi content ki length width limit krni h to type the following ye sirf apne parent yani conta ka 50 percent lega apne parent ka leta h not of page */
+            width: 50%;
+            /* x rem means html ko yani root ko jitni size mili h uska x guna kr do*/
+        }
+        /* for phone vmin is width and vmax is height
+        for tablet and computer screen vmin is height v max is width */
+        .myconta{
+            background-color: rgb(191, 209, 150);
+            color: purple;
+            border: 3px solid black;
+            font-size: 22px;
+            width: 100vmin;
+            margin: 20px auto;
+            /* now i want that ki jo beech wala paragraph h wo kuchh space le ke rkhe jisse mera footer niche hi rhe so type the following */
+        }
+
+        /* px is not responsive unit means size will not adjust itself according to device hence use vw */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        hey! i am a box.
+    </div>
+    <div class="conta">
+        <p>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sunt ipsa nam cum dicta voluptatem doloremque.
+        Incidunt placeat repudiandae reprehenderit temporibus quibusdam! Qui voluptates reprehenderit inventore maiores
+        mollitia nobis ducimus ullam nihil sit sint!</p>
+    </div>
+    <div class="myconta">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam.    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-variable</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --color: blue;
+            --seccolor: lightblue;
+            /* root hamne ek variable declare kiya h jiske andar hamre color aur seccolor(secondary color) diya h */
+            /* iske use se ham apne pages ki theme badal sakte h isi color ko var ke andatr likh do aur jab bhi color change krna hoga yha se kroge to har jagah ka change ho jayega */
+            /* root ke andar universal variable declare krte h  */
+            --defpad:14px;
+            /* ham har jagah padding deke ek baar me hi  h */
+            /* naam apne hisaab se de skte h just like programming languages with some exception */
+        }
+
+        ul li {
+            list-style-position: inside;
+            list-style: none;
+            padding: 4px;
+            padding: var(--defpad);
+            text-transform: capitalize;
+
+        }
+        ul li:first-child{
+            --seccolor: red;
+            background-color: var(--seccolor);
+            /* we are declarinh local variables */
+        }
+        ul li:nth-child(3){
+            --seccolor: grey;
+            background-color: var(--seccolor);
+            /* we are declarinh local variables */
+        }
+
+        .gt{
+            background-color: var(--seccolor);
+        }
+
+        .oo {
+            /* background-color: yellow; */
+            background-color: var(--color);
+            /* ham har cheez jha color lgta h wha  */
+            /* to change theme */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        .hek {
+            /* background-color: rgb(255, 255, 135); */
+            /* now let's declare a variable only for this .hek iska naam bhi ham seccolor de skte h */
+            --seccolor: lightgreen;
+            background-color: var(--seccolor);
+            /* to change theme */
+            /* we are declarinh local variables */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="oo">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>logout </li>
+        </ul>
+    </div>
+    <div class="hek">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem dicta enim facere inventore esse
+        aliquam animi nesciunt expedita provident iure harum praesentium reprehenderit perferendis nostrum fugit ea amet
+        nisi tenetur repudiandae similique, a, laborum voluptatibus! Dolore itaque ea blanditiis aspernatur accusantium
+        ducimus consequatur delectus praesentium, cum perspiciatis magnam minus animi at modi suscipit maiores qui
+        recusandae, quis adipisci quas laudantium iure consequuntur aliquid esse. Dicta ea tempore, officiis aspernatur
+        ut quaerat dolor laborum quos eveniet, voluptatibus iusto ipsa error. Voluptates quae magnam vero, quia officia
+        ullam dolorem illum debitis quo, doloremque quisquam aperiam a architecto at ipsum. Illo magnam nostrum officiis
+        explicabo placeat quidem aut veritatis, recusandae sit porro eum adipisci doloremque error, quas animi debitis,
+        esse dolorem accusamus aperiam laborum dolore consequatur minus. Veniam, placeat quidem illum perferendis
+        repudiandae a eos fugit expedita qui nobis id suscipit dolor ipsum dicta repellat eum, doloribus quasi aut
+        quaerat tempora quo iure ipsam velit. Reprehenderit magni dignissimos asperiores aliquam fugit voluptatibus
+        praesentium reiciendis atque?
+    </div>
+    <div class="gt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque iste ipsam, consequuntur inventore quae impedit quidem placeat rerum? Maxime debitis alias doloribus odio officia, laboriosam quasi provident. Corrupti voluptate laboriosam vero ut quaerat, perferendis consequuntur! Eos accusantium ipsa laboriosam adipisci officia placeat a aperiam animi totam, obcaecati dolorem odit quidem ut fugit error quaerat minus vitae porro id ratione! Incidunt eos perspiciatis illo enim doloribus laboriosam.
+    </div>
+</body>
+
+</html>

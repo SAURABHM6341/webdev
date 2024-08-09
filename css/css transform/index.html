@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+            /* transform: scale(1.5);scale means utne times saari scales bdi ya chhoti ho jayengi */
+            /*transform: skew(5deg);skew maatra x and y direction me hota h z me nhi hota h
+            skew matlab do taraf se pakad ke kheech dena */
+            /*transform: translateX(100%) skew(15deg);/* translate ka matlab khiskana ek se jyada transform property lgane ke liye space dekar kr skte h */
+            /* transform: translateY(45%); */
+            /* transform: translateZ(45%); */
+            transform-origin: 0% 0%;/*ise 0 0 krne se ab jo bhi aap rotattion krayenge wo iske origine ke about hogi abhi hamne ise centre me kiya h isiliye centre hi origin h agr koi aur value denge to use abount rotate hoga*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+box
+        </div>
+    </div>
+</body>
+</html>

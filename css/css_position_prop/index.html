@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posiprop</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 230px;
+            width: 480px;
+            padding: 4px;
+            margin: 4px;
+        }
+
+        .box1 {
+            background-color: orange;
+            /* position: relative; */
+            /* absolute position likhne ke bjay ham dusri cheez ko bhi likh skkte h you can read it in .parent style comment */
+            /* transform: translate(0); */
+            /* this will be taught later */
+            /* filter: invert(0); */
+            /* perspective: 0m; */
+
+            /* above 3 are exception property */
+            /* position: absolute; */
+            /* absolute position krne ke baad agr koi bhi position doge to wo apne nearest positioned ancestor ke respect me lgegi
+            linke maine box 1 ko absulte krke usme kuchh position di to wo parent se puchhega are you positioned agr nhi to fir wo body se puchhega agr nhi to wo phir page se pu6ega aur usi ke respect me lag jayega */
+            z-index: 3;
+        }
+
+        .box2 {
+            background-color: white;
+            position: relative;
+            /* by default position fixed hoti h isiliye phle unko position absolute ya relative and any other kre jisse wo move ho ske
+            relative means ab jo bhi ham position denge wo uski present position ke respect me lgegi  */
+            top: -100px;
+            left: 250px;
+            /* ab ek ke peeche ek krne ke liye */
+            z-index: 2;
+        }
+
+        .box3 {
+            background-color: blue;
+            position: relative;
+            /* position: fixed; */
+            top: -100px;
+            left: 500px;
+            z-index: 1;
+            
+            /* jab position fixed ho jati h to chahe aap scroll bhi kre wo wha se nhi hat ta it's like ads on website jo hat te nhi h */
+        }
+
+        .box4 {
+            background-color: green;
+            /* position: relative; */
+            position: sticky;
+            top: 0px;
+            /* top: 5px; */
+            /* left: 750px; */
+            height: 25px;
+            margin: 0;
+            padding: 0;
+            z-index: 6;
+            width: 100%;
+            /* now making position sticky means aap scroll kro aur element ek hi jgh stick ho jaye seems like fixed */
+            
+        }
+
+        .parent {
+            /* transform, filter, or perspctive properties 
+            ye aap box 1 me dekhe */
+            border: 5px solid rgb(8, 8, 8);
+            height: 720px;
+            padding: 5px;
+            margin: 5px;
+            /* position: absolute;  isko lgane ke baad jab div pu6ega isse to ye apne respect me position krwayega*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box4">asshole</div>
+        <div class="box box1">hello</div>
+        <div class="box box2">hey</div>
+        <div class="box box3">what</div>
+    </div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eligendi. Assumenda eveniet obcaecati explicabo aliquid pariatur praesentium tempore id neque non placeat consequuntur a maiores ut quia voluptatibus dignissimos itaque voluptatem, odit totam sapiente rem numquam. Hic beatae deleniti ipsa dolore, ratione tempora rerum soluta aut eum. Est ab sequi unde dolore maxime eligendi ducimus atque? Ex qui error perspiciatis magni reiciendis, voluptatum labore praesentium consectetur cupiditate ad at alias pariatur accusamus quas. Numquam quod eligendi nisi praesentium? Assumenda distinctio quasi hic in nihil ad amet, fuga laborum quod vitae, deleniti, tenetur reprehenderit ipsum sed? Veritatis molestiae earum odio pariatur molestias? Enim nam, quibusdam accusantium dolores magni pariatur incidunt fuga culpa unde doloremque hic rem at soluta assumenda obcaecati? Eius, commodi aut ex accusamus saepe animi sed fugiat, odit sint reprehenderit veritatis id exercitationem voluptatibus ducimus dolor sapiente? Nisi nihil neque alias reiciendis rem error odio ad minima saepe aspernatur rerum, repellat impedit illo? Dolor non nulla culpa eligendi consectetur aliquid iure quis praesentium voluptatum provident reprehenderit aliquam deserunt sint officia est, ullam sed necessitatibus ut. Impedit, ipsum? Magni enim vel quidem expedita perspiciatis minima velit eligendi placeat facere culpa, ut temporibus quod a ab dolorum explicabo error. Nobis laborum, quasi doloremque nam numquam, voluptate voluptatum saepe earum corporis vel dolore temporibus nesciunt similique doloribus dolor dolorem minus itaque error eius pariatur soluta quibusdam quae libero nihil. Suscipit itaque eum, fugiat eos sint laborum quaerat labore. Non, aliquam! Neque, nihil! Quo molestias laborum unde pariatur nihil, mollitia voluptatibus! Aspernatur consequatur exercitationem odit deserunt earum impedit sed, illum temporibus amet debitis. Aliquam nihil iste adipisci pariatur, doloremque veniam. Eveniet accusamus, cupiditate dolor tenetur quaerat sapiente voluptate totam! Quibusdam debitis tenetur qui earum repellendus voluptates doloremque quo maiores ipsa officia, ut vel eos praesentium cumque atque deleniti consequatur molestias, sit assumenda similique neque obcaecati nemo, odio suscipit. Quia corrupti sunt fugit consectetur, obcaecati cumque eligendi, aspernatur, iure dolor reiciendis totam sed unde. Dicta sed suscipit voluptatem quo eius adipisci voluptate repellat minima cumque provident. Nemo quaerat autem sequi velit corrupti ea voluptas molestias nobis illo numquam mollitia quasi blanditiis amet dolore modi, quibusdam enim quam non consequatur! Quisquam quis odio, quos veritatis commodi aut, ipsa minus quia eum magni maxime incidunt illum tempore tempora delectus nihil consequatur possimus debitis rerum illo iure, odit modi eius officia. Nihil quae laudantium harum numquam fugit delectus odio porro vel, voluptatibus assumenda facere! Tenetur laudantium recusandae inventore fugit vitae repudiandae necessitatibus veritatis, optio nisi aliquid odit, temporibus pariatur maxime rerum similique! Eveniet quae reiciendis esse facilis hic illo iste placeat similique tempore nulla, ipsam, sapiente nesciunt!
+    </div>
+</body>
+
+</html>

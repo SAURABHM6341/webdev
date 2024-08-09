@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .conta {
+            border: 2px solid red;
+            width: 80vw;
+            margin: auto;
+            display: grid;
+            grid-template-areas: "nav nav nav" "side article article1" "footer footer footer";
+            /* upar wali line likhne se jo container h usme 3 column area  bne nav naam ke isiliye jan 1 ko nav likha to wo pura leli kyuki naam same h 
+            and 2nd row me first column ka naam side pda aur isi tarah 3 row and 3 column area bna */
+
+        }
+
+        .item {
+            border: 2px solid black;
+            height: 55px;
+        }
+        .item1{
+            grid-area: nav;
+        }
+        .item2{
+            grid-area: side;
+        }
+        .item3{
+            grid-area: article;
+        }
+        .item4{
+            grid-area: article1;
+        }
+        .item5{
+            grid-area: footer;
+        }
+        /* aisa likhne par jo item 4 h wo 1st row se 2nd row tak and 1 column se 2nd column tak aa jayega aur 1st item ko push krke side kr dega aur agr chahte h ki dono overlap kre to dono ko same property de de  */
+    </style>
+</head>
+
+<body>
+    <div class="conta">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+
+</html>

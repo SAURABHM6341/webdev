@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .container {
+            background-color: green;
+            height: 60vh;
+            width: 60vw;
+        }
+
+        .box {
+            background-color: yellow;
+            width: 7vw;
+            height: 7vh;
+            /*transition-property: transform;/*kis property me lgana h class ka naam nhi likhna h prop ka naam likhna h aur agr all likh doge to saari prop me lag jayega is class ke means color font etc me bhi*/
+            /* transition-property: all; */
+            transition-property: background-color, transform;
+            transition-duration: 2s;/*kitne duration*/
+            transition-timing-function: ease-in-out;/*konsi transition*/
+            transition-delay: 0.5s;/*click ke kitne der baad kaam chahlu ho*/
+            /*ab charo ko ek aath kaise likhe*/
+            /* transition: all 3s ease-in-out 0.5s; */
+            transition: all 3s cubic-bezier(0.03, 0.92, 1, 0.08) 0.5s;
+            /* ham cubic bezier function bnake yha transition function me apply kr skte h  chrome ke dev tools se bna skte h  */
+        }
+
+        .transform {
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box transform">
+
+        </div>
+    </div>
+</body>
+
+</html>

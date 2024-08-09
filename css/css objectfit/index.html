@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fit property </title>
+    <style>
+        .container {
+            height: 600px;
+            width: 450px;
+            /*height: 198px; 2 minus in height and width because width of border is 2px
+            width: 148px;*/
+            border: 2px solid white;
+            background-image: url(Screenshot_20210202-100235~2.png);/*hamne image ko as background image use kr rhe h aur position top right diye to top right ka jitna fit ho rha tha wo show rha h */
+            /* background-position: top right; */
+            /* background-position: center; */
+            /* background-color: green; */
+            /*agr image container se choti h to pura cover krne ke liye jidhar khali hota h udhar image repeat ho jati h like maine ek image dali jiski height kam h to wo y me repeat hogi*/
+            /* background-repeat: no-repeat;  isko likhne se repeat nhi hoti h*/
+            /* background-repeat: repeat-x; isko likhne par x me repeat hogi par y me nhi */
+            background-position: center center;
+            /* ise likhne par apki image centre me aajati h dono direction se  */
+            /* background-clip: border-box; border ke bahar ka clip ho jayega*/
+        }
+       /* img{
+            height: 600px;
+            width: 450px;
+            object-fit: fill;/*isko likhne par  provided height aur width me img fill ho jayegi aspect ratio nhi maintain hoga*/
+            /* object-fit: cover; */
+            /*object-fit:scale-down;isko likhne se image choti kr dete h */
+
+            /* cover likhne par ham photo ko keh rhe h ki hey photo aap apna aspect ratio maintaion krte huye mere dwara pradan ki gyi iss height and width me fit ho jao i.e. 200x150px */
+            /* object-fit: contain; isko likhne par jo width aur height di gyi h usme ye img khud ko pura dikhane ki kosis krega by maintaing its aspect ratio lekin uske karan kuchh height aur width chhut jayegi jisme image ki koi glti nhi h */
+            /* dekho cover krne par photo ka kuch portion crop ho jata h to agr aap chahte h ki jab crop ho to ek specific side ka crop hona chahiye then wite the following property */
+            /*object-position: top right;ise likhne par hame top right ka dikhayega baaki agr maitainable nhi hoga to crop kr dega*/
+           /* object-position: 10px 20px;
+            /* isko likhne par object fit hone ke baad left se 10 px aur upar se 20 px shift ho jayega  */
+
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- <img src="Screenshot_20210202-100235~2.png" alt="chitra"> -->
+    </div>
+</body>
+</html>

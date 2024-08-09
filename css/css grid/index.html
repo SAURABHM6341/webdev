@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .conta {
+            border: 2px solid red;
+            height: auto;
+            width: auto;
+            display: grid;
+            /*grid-template-columns: [pehla] 120px [dusra] 100px;ye hamne column ko naam diya h na doge to bhi chlega*/
+            /* grid-template-rows: 100px 100px 100px; */
+            /* upar ki 2 line ke code se ham grid me no. of rows and no. of columns bnate h jitne likhoge utne bnenge */
+            /* now let's talk about a unit 'fr' means fraction */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* ab jaise mujhe bahut saare columns chahiye to mujhe baar baar 1 fr likhna pdega uska solution neeche likha h bracket repeat(no._of_times size) */
+            /*grid-template-columns:repeat(4, 1fr) ;it will creat 4 rows of 1 fr*/
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            gap: 3px;
+            /* 1 fraction  3 baar likha h isiliye grid ki width ke 3 equal parts  */
+            /* justify-items: center; */
+            /* align-items: center; */
+            place-content: center;
+            /* place content dono ka kamm krta h justify aur allign */
+
+        }
+
+        .item {
+            border: 2px solid black;
+            height: 55px;
+            width: 55px;
+        }
+
+        /* .item4{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        } */
+        /* aisa likhne par jo item 4 h wo 1st row se 2nd row tak and 1 column se 2nd column tak aa jayega aur 1st item ko push krke side kr dega aur agr chahte h ki dono overlap kre to dono ko same property de de  */
+        .item1 {
+            /* grid-column: 1/2; */
+            /* grid-row: 1/2; */
+            align-self: start;
+            justify-self: start;
+        }
+
+        /* .item3{
+            /* grid-column: 2/-1; */
+        /* grid-row: 2/3; */
+        /* slash ka replacement  */
+        /* grid-column-start: 2; */
+        /* grid-column-end: -/1; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="conta">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>

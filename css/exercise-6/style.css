@@ -1,0 +1,77 @@
+.nav{
+    display: flex;
+    margin-top: 10px;
+}
+.sec{
+    display: flex;
+    margin-left: 610px;
+    margin-top: 22px;
+
+}
+.body1{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 270px;
+}
+.logo{
+    margin-left: 54px;
+}
+.element{
+    margin-right: 16px;
+    color: rgb(68, 68, 68);
+}
+*{
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+.photo{
+    margin-right: 35px;
+}
+.contamain{
+    display: flex;
+    margin-left: 350px;
+    margin-top: 25px;
+    font-size: 43px;
+}
+.contamain2{
+    margin-top: 15px;
+    margin-left: 300px;
+    border: 2px solid white;
+    /* width: 400px; */
+    font-size: 23px;
+
+}
+button{
+    background-color: aqua;
+    color: white;
+    font-weight: 800;
+    padding: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 38vw;
+    margin-top: 4px;
+}
+button:hover{
+background-color: red;
+cursor: pointer;
+
+}
+button:active{
+    color: white;
+    background-color: black;
+}
+.left{
+    margin-top: 3px;
+    margin-left: 40vw;
+    font-size: 23px;
+}
+.content{
+    margin-right: 10px;
+}
+.content2{
+    font-weight: 800;
+}
+.star{
+    margin-left: 17px;
+}

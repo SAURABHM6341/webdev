@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_2</title>
+    <style>
+        .box{
+            margin: 5px;
+            padding: 5px;
+            height: 40px;
+            width: 40px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- html me spaces between paragraph and space between lines are also considered as text -->
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+    <script>
+console.log(document.body)
+console.log(document.body.childNodes)//isko likhne ke baad jitne bhi child honge body ke andar also knows as component wo saare list honge aur agr unko dekhna h to childnodes ke baad [] in bracket me 0,1,2,3, ye sab likhke whi number ka component dikhega note that space and comments are also a component  
+console.log(document.body.childNodes[1])//isko likhne par comment dikhega console me 
+console.log(document.body.firstElementChild)
+// agr app container bina define kre likhoge to error dega
+let cont = document.body.childNodes[3]//3 is liye kyoki wo 3rd h comment aur space ke baad
+console.log(cont.firstElementChild)//output me box1 aa rha hoga
+cont.lastElementChild.style.color = "blue"
+console.log(document.body.firstElementChild.children)//saare box ka naam aa jayega
+console.log(cont.lastElementChild.parentElement)//box ka parent show hoga
+console.log(document.body.firstElementChild)//pehla child jo element h 
+console.log(document.body.firstElementChild.childNodes)//saare nodes milenge
+console.log(document.body.firstElementChild.children)//saare elemental nodes milenge
+console.log(document.body.firstElementChild.children[4])//5th wala elemental nodes milenge
+console.log(document.body.firstElementChild.children[3].nextElementSibling)//5th wala elemental nodes milenge kyoki wo 4th ka next sibling h 
+console.log(document.body.firstElementChild.children[3].previousElementSibling)//ye previous wala sibling dega
+console.log(document.body.firstElementChild.children[3].previousSibling)//previous ki jagah next bhi ho skta tha isme element bas nhi saare nodes milenge text aur comments bhi 
+
+</script>
+</body>
+</html>

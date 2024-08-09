@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>specificity</title>
+   <style>
+    .yellow{
+        color: yellow;
+    }
+    [data-x=a]{
+        color: blue;
+    }
+    .red{
+        color: red;
+    }
+    
+   </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow red" data-x="a">
+            ye dekho bhai phir aa gye ganda muh leke
+            <a href="https://codewithharry.com">for more clarity click here</a>
+            <!-- jab kisi ek element ko ek se jyada style dete h to cascade algorithm se decide hota h kaunsa style apply hoga
+            rule-1:- agr saare selector same h to sabse niche wala apply hoga known as effect of position 
+        rule-2:- specificity-- sabse jyada specific  inline css hota h mtlb style = krke jo likhte h fir id selector hota h then class and atribute then element selector then universal selector
+    * atribute selector data wala example
+atribute and class have same specificity then position dependent ho jata h
+**agr ham koi style mhi dete h to browser user agent stylesheet se sttyle kr dete h 
+** agr kisi color ke likhne ke baad importamt lga diya jaye yo uski specificity sabse jyada ho jati h aur whi reflect hoga 
+**specificity calculate krne ke liye notes dekhe ya fir codewithharry.com pr jaaye
+jab complex selectors ho to sab ki specificity calculate krne ke liye add kr do -->
+
+
+<!-- **specificity of universal selector is zero(0).
+**element selectors and pseudo elements - 1 
+**class selector,attribute selector and pseudo selector - 10
+**id selectors - 100
+**inline style - 1000
+add all to calculate specificity-->
+        </h1>
+    </div>
+</body>
+</html>

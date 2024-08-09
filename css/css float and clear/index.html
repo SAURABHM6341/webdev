@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        /* *{
+            margin: 0;padding: 0;
+        } */
+        img{
+            float: right;
+            /* float: left; */
+            /* isko likhne se img left me chli jati h aur content is allowed to have the left space */
+            display: flow-root;
+            /* jab content ke container se img bahar ja rhi ho to isko likh ke image ke bahar  bhi border aa jayega */
+
+        }
+        .card1{
+            border: 2px solid black;
+            background-color: aqua;
+            font-weight: 600;
+        }
+        .card2{
+            border: 2px solid black;
+            background-color: aqua;
+            font-weight: 600;
+            /* clear: right;
+            clear: both; */
+            clear: left;
+            /* clear right likhne se ye apne right me koi content allow nhi krega  */
+            /* clear both likhne par left right dono side nhi allow krta */
+        }
+        .card3{
+            border: 2px solid black;
+            background-color: aqua;
+            font-weight: 600;
+        }
+        .card4{
+            border: 2px solid black;
+            background-color: red;
+            font-weight: 600;
+            color: yellow;
+        }
+        .cards{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards"></div>
+        <img src="Untitled.png" alt="dhamaka" width="289px" height="288px">
+         
+        <div class="card1">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius consequuntur. Fuga iste necessitatibus accusantium nemo repudiandae beatae expedita unde repellendus velit. Adipisci reprehenderit placeat quisquam sit consequatur quas ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia explicabo iste dicta recusandae laboriosam, vel iure odio a, neque dolore quia eaque provident sunt rerum voluptate voluptates praesentium. Earum nemo, perspiciatis atque iste, ad consequuntur quibusdam in architecto id veniam qui consequatur. Vitae error veritatis obcaecati nostrum totam ducimus, quo animi eius, facilis mollitia hic repellendus nulla, labore tenetur illum. Rem distinctio quidem obcaecati nesciunt cumque neque libero ipsum blanditiis architecto! Error necessitatibus quasi commodi deserunt laudantium quis impedit nostrum laboriosam, accusantium sequi, at ab animi? Quis exercitationem illum iste nulla nihil molestias necessitatibus quo. Optio neque quibusdam itaque in.</div>
+        <div class="card2">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius consequuntur. Fuga iste necessitatibus accusantium nemo repudiandae beatae expedita unde repellendus velit. Adipisci reprehenderit placeat quisquam sit consequatur quas ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia explicabo iste dicta recusandae laboriosam, vel iure odio a, neque dolore quia eaque provident sunt rerum voluptate voluptates praesentium. Earum nemo, perspiciatis atque iste, ad consequuntur quibusdam in architecto id veniam qui consequatur. Vitae error veritatis obcaecati nostrum totam ducimus, quo animi eius, facilis mollitia hic repellendus nulla, labore tenetur illum. Rem distinctio quidem obcaecati nesciunt cumque neque libero ipsum blanditiis architecto! Error necessitatibus quasi commodi deserunt laudantium quis impedit nostrum laboriosam, accusantium sequi, at ab animi? Quis exercitationem illum iste nulla nihil molestias necessitatibus quo. Optio neque quibusdam itaque in.</div>
+        <div class="card3">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius consequuntur. Fuga iste necessitatibus accusantium nemo repudiandae beatae expedita unde repellendus velit. Adipisci reprehenderit placeat quisquam sit consequatur quas ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia explicabo iste dicta recusandae laboriosam, vel iure odio a, neque dolore quia eaque provident sunt rerum voluptate voluptates praesentium. Earum nemo, perspiciatis atque iste, ad consequuntur quibusdam in architecto id veniam qui consequatur. Vitae error veritatis obcaecati nostrum totam ducimus, quo animi eius, facilis mollitia hic repellendus nulla, labore tenetur illum. Rem distinctio quidem obcaecati nesciunt cumque neque libero ipsum blanditiis architecto! Error necessitatibus quasi commodi deserunt laudantium quis impedit nostrum laboriosam, accusantium sequi, at ab animi? Quis exercitationem illum iste nulla nihil molestias necessitatibus quo. Optio neque quibusdam itaque in.</div>
+        <div class="card4">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eius consequuntur. Fuga iste necessitatibus accusantium nemo repudiandae beatae expedita unde repellendus velit. Adipisci reprehenderit placeat quisquam sit consequatur quas ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia explicabo iste dicta recusandae laboriosam, vel iure odio a, neque dolore quia eaque provident sunt rerum voluptate voluptates praesentium. Earum nemo, perspiciatis atque iste, ad consequuntur quibusdam in architecto id veniam qui consequatur. Vitae error veritatis obcaecati nostrum totam ducimus, quo animi eius, facilis mollitia hic repellendus nulla, labore tenetur illum. Rem distinctio quidem obcaecati nesciunt cumque neque libero ipsum blanditiis architecto! Error necessitatibus quasi commodi deserunt laudantium quis impedit nostrum laboriosam, accusantium sequi, at ab animi? Quis exercitationem illum iste nulla nihil molestias necessitatibus quo. Optio neque quibusdam itaque in.</div>
+    </div>
+</body>
+</html>

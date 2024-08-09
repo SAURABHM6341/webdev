@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows-and-outlines</title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.sau{
+    border: 3px solid red;
+    border-radius: 55px;
+    background-color: greenyellow;
+    color: black;
+    width: 200px;
+    padding: 14px;
+    margin: auto;
+    box-shadow: 2px 5px 5px rgb(156, 173, 156);
+    outline: 3px solid rgb(0, 0, 0);
+    /* ye box model ka hissa nhi hota h aur ye bahar hota h border kke */
+    /* box-shadow: x_offset y_offset spread_or_blur color; */
+}
+.text
+{
+text-shadow: 2px 3px 5px yellow;
+margin-top: 6px;
+}
+
+</style>
+
+<body>
+    <div class="sau">
+        hey bing i am saurabh mishra
+        how are you?
+    </div>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed quod magnam adipisci et odit quae quasi nostrum, itaque cum ullam laborum aliquam quaerat officia rem illum qui soluta fugiat, eligendi magni, deserunt aperiam! Corrupti totam maxime odit nihil et impedit dolores quasi eos temporibus vero, dicta facilis quibusdam ipsum debitis tempore officia. Dolorum, ullam beatae unde consequatur odit totam eveniet sequi ipsam.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+    <style>
+        .child{
+            height: 20px;
+            width: 200px;
+            background-color: bisque;
+           margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+
+        }
+        .childcontainer{
+            height: 60px;
+            margin: auto;
+            padding: 15px 100px 15px 100px;
+            width: 200px;
+            background-color: yellow;
+            
+        }
+        .container{
+            background-color: green;
+            margin: auto;
+            width: 600px;
+            height: 90px;
+            padding: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">mai baccha hu</div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e)=>{
+            e.stopPropagation()
+            alert("you have clicked me (child)")
+            //if we click on child then technically we are also clickng container because child is inside the container
+        })
+        document.querySelector(".container").addEventListener("click", (e)=>{
+            e.stopPropagation()
+            alert("you have clicked me")
+        })//if you want when you click on child only child get fired then type e.stop propagation
+        function colors() {
+    let a = Math.ceil(Math.random() * 255);
+    let b = Math.ceil(Math.random() * 255);
+    let c = Math.ceil(Math.random() * 255);
+   
+    return `rgb(${a}, ${b}, ${c})`
+}
+        setInterval(() => {
+            document .querySelector(".container").style.backgroundColor = colors()
+            
+        }, 500);//1000ms means 1second
+        setInterval(() => {
+            document .querySelector(".childcontainer").style.backgroundColor = colors()
+            
+        }, 500);
+        let a = setInterval(() => {//ek hi cheez ko run krane ke liye after a period of given time
+            document .querySelector(".child").style.backgroundColor = colors()
+            document .querySelector(".child").style.color = colors()
+            
+        }, 500);
+        // clearInterval(a) isko lgane se ruk jata h ye kind of loop cheez
+        setTimeout(() => {
+            document .querySelector(".childcontainer").style.backgroundColor = colors()
+            
+        }, 2000);//set timeout sirf ek hi baar run hota h ;
+        //we use cleartimeout for removing this
+        // clear wali cheez ko run krane ke liye interval ya timout wale function jo return kr rh use kisi me store kro like maine likha h let a = fumnction
+        //then dev tool me jaa ke agr cleartimeout(returned_value) or clearInterval(returned_value)
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert or remove items from page</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="display: block;" data-created_by="saurabh" data-provided_by="codewithharry">hey i am a
+            box</div>
+    </div>
+
+    <script>
+        console.log(document.querySelector(".box"))//it will select the box and  return the things that has class .box 
+        console.log(document.querySelector(".container").innerHTML)//isse .container ke andar ka html print hoga
+        console.log(document.querySelector(".container").innerText)//isse container ke andar ka html as a text dikhega 
+        console.log(document.querySelector(".container").outerHTML)//isse andar ke material  ke saath container khud bhi print hota h 
+        console.log(document.querySelector(".container").tagName)//this will give the type means div span these type 
+        console.log(document.querySelector(".container").nodeName)//this will give the type means div span these type but this is also valid for comment and other but tag doesn't 
+        console.log(document.querySelector(".box").hasAttribute("style"))//it will return boolean true or false it wil check that whether .box has style attribute or not if yes then true will be returned
+        console.log(document.querySelector(".box").getAttribute("style"))//it will return the style content inside this box
+        document.querySelector(".box").setAttribute("style", "display: inline")//it will alter the atrribute
+        console.log(document.querySelector(".container").attributes)
+        document.querySelector(".box").removeAttribute("style")//it will remove the styles from box
+        //if you type document.designMode = "on" in console of any website you can edit everything displayed on the website
+        console.log(document.querySelector(".box").dataset)//it will return the data attribute which i have written in box 
+        let div = document.createElement("div")//we have cearted a div
+        div.setAttribute("class", "created");//we have given a class created to container
+        document.querySelector(".container").append(div)//it will insert div with class created in container
+        console.log(document.body.children)//it will show all the things inside body
+        //node.append(element) se last me jayega inside
+        //node.prepend(element) se shuru me aa jayega node ke inside
+        // node.before(el)-- ye us node pehle aur outside add ho jayega
+        // node.after(el)-- ye us node ke baad aur outside add ho jayega
+        //node.remove(el)--- ise wo element re move ho jayega
+        div.innerHTML = "<b> hey i am created</b>"//nye div ke andar ye likhar jayega 
+        //notes ko acess kr lena bahut si cheeze usi me h 
+        div.insertAdjacentHTML("afterbegin", "hey i am under the water iuuuu")//it will add this html before div 
+        //notes ko dekh lena isse bhi jyada functons usme h   
+    </script>
+
+</body>
+
+</html>

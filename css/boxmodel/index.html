@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css boc=x model</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+.box1{
+    color: chocolate;
+     padding: 10px; /* padding content ke andar */
+ /* margin content ke bahar */
+    margin: 25px;
+    /* agr kinhi do element ki margin overlap kr rhi h to jis element ki margin max hogi wo apply ho jayegi called margin collapse */
+    border: 10px solid brown;
+    height: 200px;
+    box-sizing: border-box;
+    /* box sizing border box lokhne se ham css ko kehte h ki jo height maine di h wo padding aur boder ko milake di h  */
+}
+.box2{
+        margin: 25px;
+    border: 10px solid brown;
+    height: 200px;
+    box-sizing: border-box;
+    color: brown;
+}
+.box{
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="box box1" id="box1">i am box 1 
+    hello ji it will appear at some distance from top
+    means it has some margin and padding by default so for this we are going to give margin and padding zero
+</div>
+<div class="box box2">i am box 2</div>
+</body>
+</html>

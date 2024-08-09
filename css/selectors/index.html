@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+    
+    /* div{
+         element selector 
+    background-color: goldenrod;} */
+    #green{
+        color: chartreuse
+    }
+    .red{
+        color: red;
+    }
+    div >p{
+        /* aise likhne pr p jo direct child h div ka wha pr lagu hog ye property */
+
+        color: crimson;
+        background-color: bisque;
+    }
+    /* agr p div ke andar h kisi ke bhi through cahhe wo article to span ko kisi ke bhi through agr wo div ke andar h to property lagu kr do */
+    div p{
+        color: red;
+        background-color: yellow;
+    }/* ab visited link ka color change krna h  */
+    a:visited{
+        color: black;
+    }
+    a:link{
+        color: red;
+    }
+    /* a link mtlb jo link h uska color*/
+    /* a active mtlb jab link ke upar hover krenge to kaunsa color hoga*/
+    a:hover{
+        color: green;
+        background-color: red;
+    }
+    /* a active mtlb jab aap click kroge tab us click krte samay color change hoga */
+    a:active{
+        background-color: black;
+    }
+
+now universal selectors is *
+* {
+    padding: 0;
+    margin:0;
+}
+    </style>
+</head>
+<body>
+    <div class="red">
+        i am a div
+    </div>
+    <div id="green">
+        saurabh 
+        <!-- but i want that this div did nit get red so give class to div to avoid it -->
+    </div>
+    <div>
+        <p>
+            heloo ji kyo baar baar hello kr rhe ho
+        </p>
+    </div>
+    <a href="https://www.google.com">go to google</a>
+</body>
+</html>

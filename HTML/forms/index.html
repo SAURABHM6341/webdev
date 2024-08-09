@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this website will tell you about Lorem">
+    <title>forms</title>
+</head>
+<body>
+    <h1>apply for job? tell us more about you by filling form below</h1>
+   <form action="post">
+    <label for="id"> enter your username </label><input type="text" id="username" placeholder="enter your username">
+    <p><!--label lgane se jha enter krte h uske bgl me text aa jata h-->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+    </p>
+    <p>
+        <h3>Do you want hostel?</h3>
+        <input type="checkbox" name="hostel" id="yes" value="yes">
+        <label for="yes">yes</label>
+        <input type="checkbox" name="hostel" id="no" value="no">
+        <label for="no">no</label>
+    </p>
+    <p>
+        <textarea name="comment" id="write" cols="30" rows="10">enter your comment here...
+        </textarea>
+    </p>
+    <p>
+        <select name="fruits" id="fruits">
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="kuchh nhi">kuchh</option>
+        </select>
+    </p>
+   </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* .box:not(:first-child) {
+        background-color: red;
+    }
+    .box1::first-line{
+         isla matlab ki box ki first line ko ye property de do 
+        agr mai obile me dekh rha hu to mobile me jitna text dikha rha sirf uski first line me property apply hogi 
+         background-color: aqua;
+        font-weight: 800;
+    } */
+        .boxes * {
+            /* iska matlab ki boxes ke andar jitne element to abme property lgao
+        .boxes likhne me sirf boxes ki main body select hoti h */
+            background-color: aqua;
+            font-weight: 900;
+            font-size: larger;
+
+        }
+
+        /* [data-color="primary"]{
+        margin-top: 55px;
+        padding: 34px;
+    } */
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            /* p,a,box etc these are grouping kuchh element ko ekathha style de skte h */
+            padding: 45px;
+            margin-top: 23px;
+        }
+
+        .boxes::before {
+            /* boxes ke phle ham element insert kr skte h  */
+            content: "saurabh is getting wild"
+        }
+
+        .boxes::after {
+            content: "hey i am a person whose burning desires are too wild that i have to supress it daily";
+        }
+
+        ::selection {
+            color: red;
+            background-color: yellow;
+            /* select kroge jab text ko to color badal jaega */
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: larger;
+        }
+        input::placeholder{
+            color: red;
+            font-weight: 900;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box box1">Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eveniet pariatur modi accusamus exercitationem laboriosam facere cumque, ex ipsa est totam
+            nam, quam, optio necessitatibus perspiciatis ullam sint quos tenetur a quae quisquam maxime iste? Soluta
+            voluptatibus laborum quia eius sint? Nemo quod eveniet hic vitae illo iusto voluptate vero dignissimos nihil
+            mollitia consequuntur sapiente omnis deserunt recusandae at, quasi perspiciatis tenetur eligendi sed natus
+            quibusdam. Voluptates iusto facilis rem praesentium dignissimos. Illo, rem. Veniam nisi velit asperiores
+            totam. amet consectetur.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+        
+    </div>
+    <input type="text" placeholder="apna naam yha likho">
+</body>
+
+</html>

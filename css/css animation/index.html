@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 40vw;
+            background-color: green;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: saurabhkaanimation; */
+            /* @keyframe se animation define krke yha pr likh diya to container bhaag rha h yhi agr niche likh deta to mtlb box1 me to box bhaagta */
+            /* animation-duration: 2s; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* ab ye infinite chlega */
+            /* animation-iteration-count: 4; */
+            /* animation-direction: reverse;  ye ulta animation krayega*/
+            /* animation-direction: alternate; */
+            /* animation-timing-function: cubic-bezier(0, 0, 0, 0.96); */
+            /* animation-play-state: paused; animation hote waqt jaise hi likhoge to whi ruk jayega */
+            /* animation: saurabhkaanimation 5s cubic-bezier(0, 0, 0, 0.96) 1s infinite alternate forwards, saurabhwala2 5s cubic-bezier(0, 0, 0, 0.96) 1s infinite alternate; */
+/* ek se jyada animation ham comma lga kr lga skte h  */
+        }
+        
+/* forwards  lgane se jab animation stop hoga to apni property retaion na krke jo nyi propeerty to me lgi h whi ho jayegi aur backwards lgane se wapas retain ke leta h */
+        .box1 {
+            height: 15vh;
+            width: 10vw;
+            animation: saurabhkaanimation 5s cubic-bezier(0, 0, 0, 0.96) 1s infinite alternate forwards, saurabhwala2 5s cubic-bezier(0, 0, 0, 0.96) 1s infinite alternate, aage 5s cubic-bezier(0, 0, 0, 0.96) 1s infinite alternate;
+            background-color: red;
+            /* animation: saurabhkaanimation; */
+
+        }
+        @keyframes aage {
+            from{}
+            to{
+                transform: translate(10vw 30vw) ;
+            }
+            
+        }
+
+
+        @keyframes saurabhkaanimation {
+            from {background-color: rgb(131, 3, 29);}
+
+            to {
+                background-color: black;
+                transform: translateX(80vw);
+            }
+
+        }
+        @keyframes saurabhwala2 {
+            /* yha par ham percent de kr bhi animation kra skte h */
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box</div>
+    </div>
+</body>
+
+</html>

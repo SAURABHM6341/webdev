@@ -1,0 +1,12 @@
+alert("hello sir ji how are ypu")
+console.log("kya kr rha hai jldi bhej na")
+console.log("so beautiful")
+console.log("so elegent")
+console.log("just looking like a wow")
+var a = prompt("enter your age")
+console.log("the age is " + a)
+var dhoka = confirm("if you leave my site  i will corrupt your hard drive and  this  will corrupt your system are you sure want to leave?")
+if(dhoka)
+    console.log("pasting virus in hard drives")
+else
+    console.log("process terminated")

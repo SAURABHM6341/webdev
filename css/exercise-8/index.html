@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .ball {
+            border: 2px solid red;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border-radius: 75px;
+            position: relative;
+            /* position: absolute; */
+            top: 574px;
+            animation: xwala 5s linear infinite alternate, ywala 1s infinite alternate;
+            /* animation: ywala 4s ease-out infinite alternate; */
+        }
+
+        .baksa {
+            background-color: green;
+            height: 100vh;
+            width: 1200px;
+        }
+
+         @keyframes xwala {
+            from {
+                left: 0%;
+            }
+
+            to {
+                left: 1100px;
+            }
+        } 
+
+        @keyframes ywala {
+             from {
+                top: 574px;
+             }
+
+            to {
+                top: 80px;
+            } 
+       
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baksa">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

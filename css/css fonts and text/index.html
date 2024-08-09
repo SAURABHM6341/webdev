@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts</title>
+    <style>
+            div > p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;/*font size ko bdane ghatane ke liye
+            h1 ka default size 32px hota h aur paragraph ka 16*/
+            line-height: 4;/*ye line ke beech space ke liye*/
+            letter-spacing: 2px;/*letter ke beech me space*/
+            /*text transform ka use phle word ko capitalize ,uppercase lower case sab kr skte h*/
+            text-transform: capitalize;
+            
+            width: 95px;
+            border: 2px solid rebeccapurple;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            font-weight: bold;
+            text-decoration:underline; 
+            text-decoration-color: brown;
+            text-decoration-style:dotted ; 
+            text-decoration-thickness: 7px;
+            text-indent: 10px; /*for indent at starting*/
+            text-align: center;
+
+            /* if user doesn't have your written font  then it will not shown hence to overcome this give some common font along with your desired font like sergio and roman times ,serif, gergio  */
+        }
+        p{
+            font-size: 35px;
+            width: 75px;
+            border: 4px solid red;
+            text-overflow: ellipsis;/*jo text border se bahar means overflow ho rha use ellipsis yani dotted type me kr do agr overflow ko hidden krna h to hidden wali line niche h */
+            overflow: hidden;/*if we clip in place of ellipsis then it will chop off the remaining word you can give another property "word-break: break all;" if typed break then overflow word ko next line me likhege thoda upar thoda niche jaise ham apni notebook me bche sabd ko agli line me likhte h aur break me text overflow and overflow ki jarurat nhi hoti h*/
+        }
+
+         /*nye fonts daalne ke liye you can ue google font wha jaakar aapa font select krke right side me import aur link bhi daal skte h 
+         import ke liye whi se code copy kre code google khud dega then usse style tag ke andar paste kr de
+         and link ke liye link copy kre aur title tag ke niche paste kre
+         jitne fonts daalne ho sabko ikkatha hiimport kre
+         daalne ke liye font family wala code type kre*/
+    </style>
+</head>
+<body>
+    <div><h1>Fonts</h1>
+    <p>this is a new line Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, veniam? </p>
+</div>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae excepturi dolores eaque. Laboriosam officiis cumque ad nam eaque aut, sed eveniet eligendi suscipit aspernatur! Porro, dolor. Dolor suscipit harum accusamus unde voluptates commodi cum officiis illo, iusto perspiciatis, magni omnis quisquam explicabo alias. In, quisquam.</p>
+
+</body>
+</html>

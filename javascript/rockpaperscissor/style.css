@@ -1,0 +1,89 @@
+* {
+    background-color: darkslategrey;
+}
+
+.heading {
+    font-size: 62px;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    height: 3vh;
+    margin-top: 5vh;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 50vh;
+
+}
+
+.image {
+    width: 180px;
+    height: 150px;
+    border-radius: 120px;
+}
+
+.intext {
+    font-size: 24px;
+    width: 180px;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.smallimage {
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    height: 25px;
+}
+
+.game {
+    width: 180px;
+    border: none;
+}
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    /* animation: small 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0 1; */
+    font-size: 16px;
+    color: crimson;
+
+}
+
+.message {
+    text-align: center;
+    width: 239px;
+    height: 20px;
+    margin: auto;
+    border: 2px solid yellow;
+    color: white;
+    background-color: yellow;
+}
+
+.container {
+    text-align: center;
+}
+
+.score {
+    height: 50px;
+}

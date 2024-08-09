@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_4</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        :root{
+            --pricol: rgb(255, 217, 0);
+            --borcol: white;
+            --grcol: grey;
+            --divcol: red;
+            --twocol: green;
+            --rest: black;
+        }
+        div nav ul li{
+            list-style: none;
+            padding: 8px 8px 8px 8px;
+            background-color: var(--pricol);
+            border: 2px solid var(--borcol);
+            margin: 4px 3px 0px 3px;
+
+
+        }
+        ul{
+            display: flex;
+        }
+        .one{
+            background-color: var(--divcol);
+            height: 27px;
+        }
+        .two{
+            background-color: var(--twocol);
+            border: 10px solid var(--twocol);
+            height: 2px;
+        }
+        .bla{
+            border: 1px solid var(--rest);
+            height: 4px;
+            background-color: var(--rest);
+        }
+        body{
+            background-color: var(--grcol);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>File</li>
+                <li>Edit</li>
+                <li>View</li>
+                <li>Run</li>
+                <li>others</li>
+                <li>Go Back</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="two">
+
+    </div>
+    <div class="bla"></div>
+</body>
+</html>

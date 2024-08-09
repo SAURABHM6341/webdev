@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_prop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            background-color: chartreuse;
+        }
+        /* .box{
+            border: 2px solid blueviolet;
+            width: 64px;
+            margin: auto;
+            padding: 45px; */
+            /* block element me padding achhe se lgti h  */
+        /* } */
+        .baksa{
+            border: 2px solid black;
+            /* inline element me padding height ke respect me nhi lgti h  */
+            width: 78px;
+            padding: 45px;
+            margin: 89px;
+            background-color: white;
+            /* padding dene par sirf three side se padding aayi h height me nhi aayi h ye sirf span me hota h 
+            observation- jab block element ke saath inline elememnt tha to spana me bhi padding achhe se aa rhi thi
+            margin bhi aise hi behave krti h */
+            /* agr ham chahteh ki ise sab acchhe se lge to add display property */
+            /* display: block; */
+            display: inline-block;
+            /* inline block lgane se padding margin sab block ke respect me lgegi aur spacing inline ke hisaab se ho gyi */
+            /* now it changes to block element we can chage block to inline and vice versa through display props
+            ab chuki ye block me change ho gya isiliye another span me bhi achhe se padding margin aa jayegi */
+            /* display: none; */
+            /* isko jaise hi likhoge everything in this element will be vanished */
+            visibility: hidden;
+            /* isko likhne se jo space h wo nhi jata sirf content gayab hota h  */
+            
+        }
+        .baksa1{
+            border: 2px solid black;
+            background-color: white;
+            padding: 45px;
+            margin: auto;
+        }
+        /* .div1{ */
+            /* border: 2px solid blue; */
+            /* padding: 45px; */
+            /* margin: auto;
+            width: 64px;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box">
+        i am a block element
+    </div>
+    <div class="div1">
+        i am saurabh
+    </div> -->
+    <span class="baksa">
+        i am a inline element
+    </span>
+    <span class="baksa1">
+        i am box1
+    </span>
+</body>
+
+</html>
